@@ -1,10 +1,10 @@
 #include <cstdio>
 
 int main() {
-	int n;
-	scanf("%d", &n);
+	unsigned int n;
+	scanf("%u", &n);
 	while(true) {
-		printf("%d ", n);	
+		printf("%u ", n);	
 		if(n == 1) break;
 
 		if(n % 2 == 0) {
