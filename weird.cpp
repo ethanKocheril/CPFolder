@@ -13,5 +13,5 @@ int main() {
 			n = n * 3 + 1;
 		}
 	}
-	return n;
+	return 0;
 }

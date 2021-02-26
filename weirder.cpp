@@ -1,7 +1,7 @@
 #include <iostream>
 
 int main() {
-	int n;
+	long long  n;
 	std::cin >> n;
 	while(true) {
 		std::cout << n << " ";
@@ -13,5 +13,5 @@ int main() {
 			n = n * 3 + 1;
 		}
 	}
-	return n;
+	return 0;
 }
