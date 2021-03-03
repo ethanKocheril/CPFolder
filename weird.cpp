@@ -13,5 +13,6 @@ int main() {
 			n = n * 3 + 1;
 		}
 	}
+//In the case where you print the output, either return nothing or 0.
 	return 0;
 }
