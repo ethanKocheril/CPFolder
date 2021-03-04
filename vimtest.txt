@@ -1,0 +1,15 @@
+The original vi(1) editor was the first attempt to bolt a visual, roguelike interface onto the command set of ed(1). Like ed, its commands are generally single keystrokes, and it is particularly well suited to use by touch-typists.
+
+The original vi didn't have mouse support, editing menus, macros, assignable key bindings, or any form of user customization. In line with the religion of ed, vi's partisans considered the lack of these features a virtue. On this view, one of vi's most important virtues is that you can start editing immediately on a new Unix system without having to carry along your customizations or worrying that the default command bindings will be dangerously different from what you're used to.
+
+One characteristic of vi that beginners tend to find frustrating is a result of its terse single-keystroke commands. It has a  interface — you are either in command mode or in text-insertion mode. In text-insertion mode, the only commands that work are the ESC key for mode exit and (on newer versions) the cursor-movement keys. In command mode, typing text will be interpreted as commands and do odd (and probably destructive) things to your content.
+
+On the other hand, one property of the command set that vi fans particularly tout is the object-operation format it inherited from ed. Most of the extended commands also operate in a natural way on any line range.
+
+Over the years, vi has bulked up considerably. Modern versions add mouse support, editing menus, unlimited undo (original vi could only undo the last command), multiple files in separate buffers, and customization with a run-control file. However, the use of run-control files is still unusual, and in contrast to Emacs, the use of embedded general-purpose scripting has never caught on. Instead, vi implementations have grown individual capabilities to do things, like syntax awareness of C code and output parsing of C compiler error messages, by adding C code to vi itself. Subprocess interaction is not supported.
+
+# Notes for vim improvement
+Don't use visual mode to copy or cut stuff, use y or d respectively
+generally don't use visual mode at all. The vi language can better express this. 
+c can be combined with search to delete up to your query
+use text objects(iw instead of w bc it's more precise)
