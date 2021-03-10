@@ -7,13 +7,13 @@ int main(void) {
 	int arr [n];
 
 	for(int i = 0; i < n; i++) {
-		scanf("%d",*arr + i);
+		std::cin >> arr[i];
 	} 
 	
 	for(int i = 1; i < n; i++) {
 		if(arr[i] - arr[i - 1] < 0) {
-			sum -= (*arr + i) - (*arr + (i - 1));
+			sum -= arr[i] - arr[i - 1];
 		}
 	}
-	printf("%d", sum);
+	printf("%d\n", sum);
 }
