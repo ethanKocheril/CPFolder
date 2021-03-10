@@ -8,7 +8,6 @@ int main(void) {
 	cin >> input;
 	for(int i = 0; i < input.length() - 1; i++) {
 		if(input.at(i) != input.at(i + 1)) {
-			highest = count;
 			count = 1;
 		} else {
 			count++;

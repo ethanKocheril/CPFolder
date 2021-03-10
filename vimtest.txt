@@ -1,4 +1,5 @@
-The original vi(1) editor was the first attempt to bolt a visual, roguelike interface onto the command set of ed(1). Like ed, its commands are generally single keystrokes, and it is particularly well suited to use by touch-typists.
+The original vi(1) editor was the first attempt to bolt a visual, roguelike interface onto the command set of ed(1).
+ Like ed, its commands are generally single keystrokes, and it is particularly well suited to use by touch-typists.
 
 The original vi didn't have mouse support, editing menus, macros, assignable key bindings, or any form of user customization. In line with the religion of ed, vi's partisans considered the lack of these features a virtue. On this view, one of vi's most important virtues is that you can start editing immediately on a new Unix system without having to carry along your customizations or worrying that the default command bindings will be dangerously different from what you're used to.
 
