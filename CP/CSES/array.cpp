@@ -2,21 +2,21 @@
 
 int main(void) {
 	int n;
-	int sum = 0;
+	long long sum = 0;
 	scanf("%d", &n);
 	int arr [n];
-	int diff = 0;
+	long long diff = 0;
 
 	for(int i = 0; i < n; i++) {
 		std::cin >> arr[i];
 	} 
 	
-	for(int i = 1; i < n; i++) {
+	for(int i = 0; i < n; i++) {
 		diff = arr[i - 1] - arr[i];
 		if(diff > 0) {
 			sum += diff;
 			arr[i] += diff;
 		}
 	}
-	printf("%d\n", sum);
+	printf("%lli\n", sum);
 }
