@@ -13,7 +13,6 @@ int main(void) {
 	
 	for(int i = 1; i < n; i++) {
 		diff = arr[i - 1] - arr[i];
-		printf("diff is: %lli\n", diff);
 		if(diff > 0) {
 			sum += diff;
 			arr[i] += diff;
